@@ -3,6 +3,12 @@
 The official RyukiLLC website. A **static, dependency-free** site (pure HTML/CSS/JS) —
 fast, accessible, fully responsive, and trivially hostable anywhere.
 
+**Theme:** "Deep Tech Terminal" — pitch-black `#050506` background, charcoal `#121214` cards,
+luminous cyber-cyan `#06b6d4` + deep tech-purple `#7c3aed` accents, ultra-faint precision grid,
+and a live interactive neural-network canvas in the hero.
+Typography: **Plus Jakarta Sans** (headers) + **Inter** (body) + **JetBrains Mono** (data metrics),
+loaded from Google Fonts with system fallbacks.
+
 ## Run locally
 
 ```bash
@@ -14,9 +20,9 @@ python3 -m http.server 8080
 
 | File          | Purpose                                                        |
 |---------------|----------------------------------------------------------------|
-| `index.html`  | The entire site (hero, vision, 4 key solutions, contact CTA)   |
-| `css/styles.css` | All styling — dark enterprise theme, responsive, reduced-motion aware |
-| `js/main.js`  | Mobile nav, scroll-reveal animations, header state             |
+| `index.html`  | The entire site (hero + live network panel, vision, bento solutions, innovation pipeline, contact) |
+| `css/styles.css` | All styling — Deep Tech Terminal theme, responsive, reduced-motion aware |
+| `js/main.js`  | Neural-network canvas, mobile nav, scroll-reveal, header state         |
 | `assets/logo.png` | Official Ryūki LLC wordmark (extracted, transparent background) — used in nav + footer |
 | `favicon.svg` | Brand mark (red gradient "R" tile, matches logo)               |
 | `CNAME`       | `www.ryukillc.com` — used automatically by GitHub Pages        |
