@@ -17,7 +17,8 @@ python3 -m http.server 8080
 | `index.html`  | The entire site (hero, vision, 4 key solutions, contact CTA)   |
 | `css/styles.css` | All styling — dark enterprise theme, responsive, reduced-motion aware |
 | `js/main.js`  | Mobile nav, scroll-reveal animations, header state             |
-| `favicon.svg` | Brand mark (gradient "R" tile)                                 |
+| `assets/logo.png` | Official Ryūki LLC wordmark (extracted, transparent background) — used in nav + footer |
+| `favicon.svg` | Brand mark (red gradient "R" tile, matches logo)               |
 | `CNAME`       | `www.ryukillc.com` — used automatically by GitHub Pages        |
 
 ## Deploy
