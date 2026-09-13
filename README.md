@@ -39,6 +39,6 @@ as a custom domain in the dashboard. BigBro can also deploy it: ask BigBro to
 ## Editing content
 
 - All copy lives in `index.html` (sections: hero / vision / solutions / contact).
-- **Contact email**: search `info@ryukillc.com` in `index.html` and replace with your real address.
+- **Contact email**: `contact@ryukillc.com` (in `index.html`, contact section) — change there if it ever moves.
 - Theme colors: CSS variables at the top of `css/styles.css`.
 - Adding a solution: copy any `<article class="sol-card">` block.
