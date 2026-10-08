@@ -68,7 +68,7 @@ main, header, footer { position: relative; z-index: 1; }
 
 /* ---------- mono tags / data typography ---------- */
 
-.mono, .mono-tag, .panel-title, .panel-caption, .hero-metrics,
+.mono, .mono-tag, .panel-title, .panel-caption,
 .panel-stats, .card-num, .tagline, .tile-k, .card-metrics,
 .pipeline-status, .module-tag, .cta-domain {
   font-family: var(--font-mono);
@@ -202,17 +202,6 @@ main, header, footer { position: relative; z-index: 1; }
   color: var(--dim);
 }
 .hero-actions { margin-top: 38px; display: flex; gap: 14px; flex-wrap: wrap; }
-
-.hero-metrics {
-  margin-top: 44px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 26px;
-  font-size: 11.5px;
-  letter-spacing: 1.5px;
-  color: var(--dim);
-}
-.hero-metrics b { color: var(--cyan); font-weight: 500; }
 
 /* terminal panel with live network graph */
 .hero-panel { min-width: 0; }
