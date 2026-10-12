@@ -1,21 +1,21 @@
 /* ============================================================
-   RYUKILLC — v4 "Boardroom Precision"
-   Light editorial theme for a strategic AI company:
-   porcelain background, ink text, serif display (Fraunces),
-   hairline rules, brand-red accent derived from the logo.
+   RYUKILLC — v5 "Dark Command"
+   Premium dark editorial theme for a strategic AI company:
+   near-black canvas, porcelain text, serif display (Fraunces),
+   hairline rules, bright crimson accent derived from the logo.
    ============================================================ */
 
 :root {
-  --bg:        #F7F5F1;
-  --bg-alt:    #F0EDE6;
-  --card:      #FFFFFF;
-  --ink:       #15171C;
-  --ink-soft:  #474C55;
-  --dim:       #8B909A;
-  --line:      #E2DED4;
-  --line-soft: #EAE6DC;
-  --accent:    #B3382E;   /* oxblood crimson — derived from logo red */
-  --accent-dim:#D8B4AF;
+  --bg:        #0E1013;
+  --bg-alt:    #12151B;
+  --card:      #171B22;
+  --ink:       #F2F0EA;
+  --ink-soft:  #B7BCC6;
+  --dim:       #79818F;
+  --line:      #262C37;
+  --line-soft: #1F242E;
+  --accent:    #E14A39;   /* bright crimson — derived from logo red */
+  --accent-dim:#6E332B;
 
   --font-serif: "Fraunces", "Iowan Old Style", Georgia, "Times New Roman", serif;
   --font-sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -31,6 +31,8 @@
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body {
   background: var(--bg);
+  background-image: radial-gradient(1200px 500px at 70% -10%, rgba(225, 74, 57, .07), transparent 60%);
+  background-repeat: no-repeat;
   color: var(--ink);
   font-family: var(--font-sans);
   font-size: 16.5px;
@@ -63,7 +65,7 @@ ul, ol { list-style: none; }
   inset: 0 0 auto 0;
   z-index: 100;
   height: var(--header-h);
-  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  background: rgba(14, 16, 19, .82);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
@@ -71,7 +73,7 @@ ul, ol { list-style: none; }
 }
 .site-header.scrolled {
   border-bottom-color: var(--line);
-  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  background: rgba(14, 16, 19, .94);
 }
 .nav { height: var(--header-h); display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand-logo { height: 34px; width: auto; }
@@ -129,8 +131,8 @@ ul, ol { list-style: none; }
   cursor: pointer;
   transition: background .22s ease, color .22s ease, border-color .22s ease, transform .22s ease;
 }
-.btn-primary { background: var(--ink); color: var(--bg); }
-.btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
+.btn-primary { background: var(--ink); color: var(--bg); transition: background .22s ease, transform .22s ease, box-shadow .22s ease; }
+.btn-primary:hover { background: var(--accent); transform: translateY(-1px); box-shadow: 0 8px 28px -8px rgba(225, 74, 57, .5); }
 .btn-ghost { border-color: var(--line); color: var(--ink); background: transparent; }
 .btn-ghost:hover { border-color: var(--ink); transform: translateY(-1px); }
 .btn.small, .btn-small { padding: 9px 18px; font-size: 13px; }
@@ -251,6 +253,7 @@ ul, ol { list-style: none; }
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 42px 40px;
+  box-shadow: 0 20px 50px -30px rgba(0, 0, 0, .55);
 }
 .who-card .kicker { margin-bottom: 18px; }
 .who-lede { font-size: 16.5px; color: var(--ink-soft); }
@@ -313,7 +316,7 @@ ul, ol { list-style: none; }
 .offer-card:hover {
   border-color: var(--accent-dim);
   transform: translateY(-3px);
-  box-shadow: 0 14px 34px -18px rgba(21, 23, 28, .22);
+  box-shadow: 0 16px 40px -16px rgba(0, 0, 0, .6);
 }
 .offer-num {
   display: block;
@@ -364,6 +367,7 @@ ul, ol { list-style: none; }
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
+  box-shadow: 0 30px 60px -40px rgba(0, 0, 0, .7);
 }
 .matrix {
   width: 100%;
@@ -484,7 +488,7 @@ ul, ol { list-style: none; }
 #coverage .section-sub { margin-top: 10px; font-size: 15.5px; }
 
 /* ---------- CTA ---------- */
-.cta { text-align: center; }
+.cta { text-align: center; background: linear-gradient(180deg, transparent, rgba(225, 74, 57, .05)); }
 .cta .kicker { margin-bottom: 24px; display: block; }
 .cta h2 {
   font-family: var(--font-serif);

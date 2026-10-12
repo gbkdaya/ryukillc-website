@@ -3,9 +3,9 @@
 The official RyukiLLC website. A **static, dependency-free** site (pure HTML/CSS/JS) —
 fast, accessible, fully responsive, and hostable anywhere.
 
-**Theme:** "Boardroom Precision" — light editorial design for a strategic AI company:
-porcelain `#F7F5F1` background, ink `#15171C` text, serif display type (Fraunces),
-hairline rules, and a restrained oxblood accent `#B3382E` derived from the brand logo.
+**Theme:** "Dark Command" — premium dark editorial design for a strategic AI company:
+near-black `#0E1013` canvas, porcelain `#F2F0EA` text, serif display type (Fraunces),
+hairline rules, and a bright crimson accent `#E14A39` derived from the brand logo.
 Typography: **Fraunces** (display) + **Inter** (body) + **JetBrains Mono** (labels/data),
 loaded from Google Fonts with system fallbacks.
 
@@ -21,7 +21,7 @@ python3 -m http.server 8080
 | File             | Purpose                                                        |
 |------------------|----------------------------------------------------------------|
 | `index.html`     | The entire site — hero, Our Beliefs, Vision + Who We Are, Offerings, Industry Coverage matrix, Contact |
-| `css/styles.css` | All styling — Boardroom Precision theme, responsive, reduced-motion aware |
+| `css/styles.css` | All styling — Dark Command theme, responsive, reduced-motion aware |
 | `js/main.js`     | Mobile nav, header scroll state, scroll-reveal animations     |
 | `assets/logo.png`| Official Ryūki LLC wordmark (transparent background) — nav + footer |
 | `favicon.svg`    | Brand mark (red "R" tile, matches logo)                        |
