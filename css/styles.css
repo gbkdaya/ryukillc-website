@@ -414,6 +414,28 @@ ul, ol { list-style: none; }
   background: var(--accent);
 }
 .matrix .off::after { content: "—"; color: var(--line); font-size: 13px; }
+
+/* signature capability rows — highlighted overlay */
+.matrix tr.cap-row th[scope="row"],
+.matrix tr.cap-row td { background: color-mix(in srgb, var(--accent) 6%, var(--card)); }
+.matrix tr.cap-row th[scope="row"] { box-shadow: inset 3px 0 0 var(--accent); }
+.matrix tr.cap-row:hover th[scope="row"],
+.matrix tr.cap-row:hover td { background: color-mix(in srgb, var(--accent) 10%, var(--card)); }
+.cap-badge {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: var(--font-mono);
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent-dim);
+  border-radius: 999px;
+  padding: 2.5px 9px;
+  vertical-align: 1px;
+  white-space: nowrap;
+}
 .matrix tbody tr:last-child td,
 .matrix tbody tr:last-child th { border-bottom: 0; }
 .matrix-cat th {
@@ -448,6 +470,13 @@ ul, ol { list-style: none; }
 }
 .legend-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); margin-right: 6px; vertical-align: baseline; }
 .legend-dash { color: var(--line); }
+.legend-cap {
+  display: inline-block;
+  width: 10px; height: 10px;
+  background: color-mix(in srgb, var(--accent) 6%, var(--card));
+  border-left: 3px solid var(--accent);
+  margin-right: 6px;
+}
 
 /* ---------- CTA ---------- */
 .cta { text-align: center; }
